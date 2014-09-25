@@ -1,6 +1,6 @@
 Homework
 ========
 
-Main repository for HW
+Main repository for HW.
 Yes , correctly!
 

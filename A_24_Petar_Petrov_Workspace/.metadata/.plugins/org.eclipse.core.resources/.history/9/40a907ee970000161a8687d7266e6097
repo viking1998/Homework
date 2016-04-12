@@ -1,0 +1,28 @@
+package org.elsys.threads;
+
+public class Philosophers extends Thread {
+	
+	private final int philosopherId;
+	private final Fork left;
+	private final Fork right
+	
+	public Philosophers(int id, Fork left, Fork right) {
+		philosopherId = id;
+		this.left = left;
+		this.right = right;
+	}
+	
+	@Override
+	public String toString() {
+		return "Philosopher " + philosopherId;
+	}
+	
+	public void think() {
+		System.out.println(this + " thinking!");
+	}
+	
+	@Override
+	public void run() {
+		
+	}
+}

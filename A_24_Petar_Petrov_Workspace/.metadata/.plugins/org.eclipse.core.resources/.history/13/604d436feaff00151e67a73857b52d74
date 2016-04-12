@@ -1,0 +1,14 @@
+package org.elsys.programming;
+
+import org.junit.Test;
+
+import junit.framework.TestCase;
+
+public class HashMapExampleTest extends TestCase {
+
+	@Test
+	public void testCanAddElements() {
+		HashMapImpl map = new HashMapImpl();
+	}
+
+}

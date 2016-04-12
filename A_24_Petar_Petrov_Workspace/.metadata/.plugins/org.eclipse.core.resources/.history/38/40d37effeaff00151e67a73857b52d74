@@ -1,0 +1,10 @@
+package org.elsys.programming;
+
+public class HashMapImpl {
+
+	public void add(String string, int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

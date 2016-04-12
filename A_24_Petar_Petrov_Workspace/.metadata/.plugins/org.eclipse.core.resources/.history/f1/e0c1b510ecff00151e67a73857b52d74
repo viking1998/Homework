@@ -1,0 +1,16 @@
+package org.elsys.programming;
+
+public class HashMapImpl {
+	
+	private int values[];
+
+	public void add(String string, int i) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public int get(String key) {
+		return 5;
+	}
+
+}

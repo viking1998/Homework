@@ -1,0 +1,12 @@
+package org.elsys.programming;
+
+import junit.framework.TestCase;
+
+public class HashMapExampleTest extends TestCase{
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

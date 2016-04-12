@@ -1,0 +1,24 @@
+package org.elsys.programming;
+
+public class HashMapImpl {
+	
+	private int values[];
+	private int capacity;
+	
+	public HashMapImpl() {
+		this.capacity = 17;
+		values = new int[capacity];
+	}
+
+	public void add(String key, int value) {
+		// TODO Auto-generated method stub
+		int keyHash = key.hashCode();
+		int i = keyHash % 17;
+		values[i] = value;
+	}
+	
+	public int get(String key) {
+		return values[key.hashCode()%capacity];
+	}
+
+}

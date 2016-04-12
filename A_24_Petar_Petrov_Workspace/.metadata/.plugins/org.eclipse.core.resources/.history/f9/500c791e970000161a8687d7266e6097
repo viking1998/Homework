@@ -1,0 +1,19 @@
+package org.elsys.threads;
+
+public class Philosophers extends Thread {
+	
+	private final int philosopherId;
+	
+	public Philosophers(int id) {
+		philosopherId = id;
+	}
+	
+	public String toString() {
+		
+	}
+	
+	@Override
+	public void run() {
+		
+	}
+}

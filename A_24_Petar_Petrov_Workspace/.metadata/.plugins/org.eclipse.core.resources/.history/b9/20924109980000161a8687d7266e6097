@@ -1,0 +1,35 @@
+package org.elsys.threads;
+
+import java.util.Random;
+
+public class Philosophers extends Thread {
+	
+	private final int philosopherId;
+	private final Fork left;
+	private final Fork right;
+	
+	public Philosophers(int id, Fork left, Fork right) {
+		philosopherId = id;
+		this.left = left;
+		this.right = right;
+	}
+	
+	@Override
+	public String toString() {
+		return "Philosopher " + philosopherId;
+	}
+	
+	public void think() {
+		System.out.println(this + " thinking!");
+		try {
+			 Thread.sleep(random.nextInt(500));
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Override
+	public void run() {
+		
+	}
+}

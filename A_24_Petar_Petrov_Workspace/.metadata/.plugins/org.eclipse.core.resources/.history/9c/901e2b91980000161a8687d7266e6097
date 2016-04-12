@@ -1,0 +1,12 @@
+package org.elsys.threads;
+
+public class Fork {
+	
+	private final int id;
+
+	public Fork(int id) {
+		// TODO Auto-generated constructor stub
+		this.id = id;
+	}
+
+}

@@ -1,0 +1,13 @@
+package org.elsys.threads;
+
+public class Philosophers extends Thread {
+	
+	public Philosophers() {
+		
+	}
+	
+	@Override
+	public void run() {
+		
+	}
+}

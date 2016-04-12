@@ -1,0 +1,5 @@
+package org.elsys.programming;
+
+public class HashMapExample {
+	int main(String[] argv)
+}

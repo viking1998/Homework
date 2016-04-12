@@ -1,0 +1,62 @@
+package org.elsys.programming;
+
+public class HashMapImpl {
+	
+	private int values[];
+	private int capacity;
+	
+	public HashMapImpl() {
+		this.capacity = 17;
+		this.values = new int[capacity];
+	}
+
+	public void add(String key, int value) {
+		// TODO Auto-generated method stub
+		if(size >= capacity) {
+			resize();
+		}
+		
+		int keyHash = key.hashCode();
+		int i = keyHash % 17;
+		values[i] = value;
+		size++;
+	}
+	
+	public int get(String key) {
+		return values[key.hashCode()%capacity];
+	}
+	
+	private void resize() {
+		int newSize = nextPrime(capacity);
+		int newValues[] = new int[newSize];
+		
+		for(int i=0; i < capacity; i++) {
+			newValues[i] = values[i];
+		}
+		
+		capacity = newSize;
+		values = newValues;
+	}
+	
+	private int nextPrime(int current) {
+		current += 2;
+		while(!isPrime(current)) {
+			current += 2;
+		}
+		return current;
+	}
+	
+	private boolean isPrime(int num) {
+		int divident = 2;
+		while(num % divident != 0) {
+			divident++;
+		}
+		if(divident == num) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+}

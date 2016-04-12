@@ -1,0 +1,21 @@
+package org.elsys.programming;
+
+public class HashMapImpl {
+	
+	private int values[];
+	
+	public HashMapImpl() {
+		values = new int[17];
+	}
+
+	public void add(String string, int i) {
+		// TODO Auto-generated method stub
+		int keyHash = string.hashCode();
+		int i = keyHash % 17;
+	}
+	
+	public int get(String key) {
+		return 5;
+	}
+
+}

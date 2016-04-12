@@ -1,0 +1,23 @@
+package org.elsys.programming;
+
+import org.junit.Test;
+
+import junit.framework.TestCase;
+
+public class HashMapExampleTest extends TestCase {
+
+	@Test
+	public void testCanAddElements() {
+		HashMapImpl map = new HashMapImpl();
+		
+		map.add("key", 5);
+		
+		assertEquals(map.get("key"), 5);
+	}
+	
+	@Test
+	public void testCanAddMultipleElement() {
+		HashMapImpl map = new HashMapImpl();
+	}
+
+}

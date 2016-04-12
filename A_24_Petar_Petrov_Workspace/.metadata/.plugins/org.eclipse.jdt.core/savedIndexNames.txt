@@ -1,0 +1,5 @@
+INDEX VERSION 1.127+/home/elsyser/A_24_Petar_Petrov_Workspace/.metadata/.plugins/org.eclipse.jdt.core
+3184852344.index
+775681484.index
+2018309385.index
+725582070.index

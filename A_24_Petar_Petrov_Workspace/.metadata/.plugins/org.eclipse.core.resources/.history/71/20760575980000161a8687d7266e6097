@@ -1,0 +1,9 @@
+package org.elsys.threads;
+
+public class Fork {
+
+	public Fork() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

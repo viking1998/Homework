@@ -1,0 +1,5 @@
+package org.elsys.threads;
+
+public class Philosophers {
+
+}
